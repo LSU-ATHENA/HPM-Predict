@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# Generated datasets (created by gen_dataset/ runners)
+gen_dataset/data/
+data/generated/
+
+# Trained predictors / experiment outputs
+experiments/
+checkpoints/
+*.pth
+*.pt
+
+# Generated images / inference outputs
+output/
+outputs/
+
+# OS / editor
+.DS_Store

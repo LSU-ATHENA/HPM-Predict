@@ -1,0 +1,22 @@
+# Hunyuan-DiT Training Config
+# Latent: 4x128x128, Text: T5 [256, 2048]
+
+model_type: hunyuan_dit
+data_dir: data/generated/hunyuan_dit_1024
+
+architecture:
+  noise_encoder: basic_cnn_avg
+  text_encoder: compression_first
+  dropout: 0.1
+
+training:
+  loss: lambdarank
+  gain_type: exp2
+  lr: 1e-4
+  weight_decay: 1e-8
+  batch_size: 256
+  epochs: -1
+  patience: -1
+  multi_target: true
+  ndcg_k: 10
+  seed: 42

@@ -1,0 +1,22 @@
+# pip3 install torch torchvision --index-url https://download.pytorch.org/whl/cu130
+torch
+torchvision
+diffusers
+transformers
+accelerate
+safetensors
+sentencepiece
+scipy
+scikit-learn
+numpy
+Pillow
+hpsv2
+hpsv3
+image-reward
+open-clip-torch
+tqdm
+matplotlib
+tensorboard
+einops
+clip-anytorch
+torchsort
